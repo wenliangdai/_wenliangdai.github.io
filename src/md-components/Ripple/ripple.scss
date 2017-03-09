@@ -1,0 +1,10 @@
+.ripple-show {
+  animation: ripple 450ms ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}

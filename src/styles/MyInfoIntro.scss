@@ -1,0 +1,19 @@
+.myinfointro {
+  width: 100%;
+  height: auto;
+  background-color: #efefef;
+  padding: 3rem 4rem;
+
+  header i {
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1rem;
+    letter-spacing: .01rem;
+    word-spacing: .1rem;
+    line-height: 2rem;
+    user-select: none;
+  }
+}
