@@ -5,8 +5,8 @@ import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
 const ROOT_DIR = path.resolve(__dirname, '..');
 const config = {
   entry: [
-    'whatwg-fetch',
-    'promise-polyfill',
+    // 'whatwg-fetch',
+    // 'promise-polyfill',
     path.join(__dirname, '../src/index.jsx')
   ],
   output: {

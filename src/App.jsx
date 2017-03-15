@@ -1,5 +1,6 @@
 import React from 'react';
 import Audio from 'react-audioplayer';
+import fakeData from './playlist.json';
 
 class App extends React.Component {
   constructor(props) {
@@ -7,14 +8,18 @@ class App extends React.Component {
     this.state = { playlist: null };
   }
   componentDidMount() {
-    fetch('http://150.95.140.248/playlist')
-      .then(function(response) {
-        return response.json();
-      }).then(function(json) {
-        this.setState({ playlist: json.playlist });
-      }.bind(this)).catch(function(ex) {
-        alert('Sorry, network error: ' + ex)
-      });
+    // fetch('http://150.95.140.248/playlist')
+    //   .then(function(response) {
+    //     return response.json();
+    //   }).then(function(json) {
+    //     this.setState({ playlist: json.playlist });
+    //   }.bind(this)).catch(function(ex) {
+    //     alert('Sorry, network error: ' + ex)
+    //   });
+
+    // Do ajax request here,
+    // just pretend already got the data...
+    this.setState({ playlist: JSON.parse(fakeData.playlist) });
   }
   render() {
     const pl = this.state.playlist;
