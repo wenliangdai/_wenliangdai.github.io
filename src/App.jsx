@@ -40,6 +40,9 @@ class App extends React.Component {
               height={360}
               fullPlayer={true}
               comment={true}
+              onCommentSubmit={(text) => {
+                alert(`You entered: ${text}. (Use onCommentSubmit prop when you need this feature)`)
+              }}
               color="#42A5F5"
               playlist={pl}
               style={{
