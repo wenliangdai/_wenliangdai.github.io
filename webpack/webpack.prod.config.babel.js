@@ -36,7 +36,7 @@ const config = {
     ]
   },
   resolve: { extensions: ['.js', '.jsx', '.css'] },
-  context: path.resolve(__dirname, 'src'),
+  context: ROOT_DIR,
   target: 'web',
   devtool: 'source-map',
   plugins: [
