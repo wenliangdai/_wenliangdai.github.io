@@ -1,9 +1,9 @@
 {
   "playlist": [
     {
-      "name": "Faded",
-      "src": "http://150.95.140.248/songs/faded.mp3",
-      "img": "http://img0.imgtn.bdimg.com/it/u=3403265509,3626536143&fm=21&gp=0.jpg",
+      "name": "Shape of you",
+      "src": "http://150.95.140.248/songs/shape_of_you.mp3",
+      "img": "http://oss.tan8.com/yuepuku/100/50357/50357_prev.jpg?v=1487820191",
       "comments": [{
           "time": 3.01,
           "content": "A great song!!!!!!"
@@ -15,7 +15,7 @@
           "content": "Love it!"
         }, {
           "time": 10,
-          "content": "it's illegal"
+          "content": "Shape of you, ooo~"
         }, {
           "time": 17,
           "content": "Remix best!"
@@ -40,9 +40,9 @@
       }]
     },
     {
-      "name": "Try",
-      "src": "http://150.95.140.248/songs/try.mp3",
-      "img": "http://img4q.duitang.com/uploads/item/201208/08/20120808011612_njiN3.thumb.224_0.jpeg",
+      "name": "Rise",
+      "src": "http://150.95.140.248/songs/rise.mp3",
+      "img": "http://img4.imgtn.bdimg.com/it/u=88801519,1533084710&fm=214&gp=0.jpg",
       "comments": [{
           "time": 3.01,
           "content": "A great song!!!!!!"
@@ -54,7 +54,7 @@
           "content": "Love it!"
         }, {
           "time": 10,
-          "content": "it's illegal"
+          "content": "A song makes you relaxed and feels great!"
         }, {
           "time": 17,
           "content": "Remix best!"

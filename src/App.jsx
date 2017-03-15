@@ -19,7 +19,7 @@ class App extends React.Component {
 
     // Do ajax request here,
     // just pretend already got the data...
-    this.setState({ playlist: JSON.parse(fakeData.playlist) });
+    this.setState({ playlist: (fakeData.playlist) });
   }
   render() {
     const pl = this.state.playlist;

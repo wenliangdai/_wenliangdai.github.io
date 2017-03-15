@@ -1,5 +1,6 @@
 import path from 'path';
 import merge from 'webpack-merge';
+import webpack from 'webpack';
 // import devConfig from './webpack.dev.config.babel';
 // import prodConfig from './webpack.prod.config.babel';
 
