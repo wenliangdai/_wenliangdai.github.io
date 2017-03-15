@@ -1,12 +1,12 @@
 import path from 'path';
 import merge from 'webpack-merge';
-import devConfig from './webpack.dev.config.babel';
-import prodConfig from './webpack.prod.config.babel';
+// import devConfig from './webpack.dev.config.babel';
+// import prodConfig from './webpack.prod.config.babel';
 
-const CONFIG = process.env.npm_lifecycle_event === 'build' ? prodConfig : devConfig;
+// const CONFIG = process.env.npm_lifecycle_event === 'build' ? prodConfig : devConfig;
 const ROOT_DIR = path.resolve(__dirname, '..');
 
-export default merge({
+export default {
   entry: [
     'whatwg-fetch',
     'promise-polyfill',
@@ -41,5 +41,27 @@ export default merge({
   },
   resolve: { extensions: ['.js', '.jsx', '.css'] },
   context: path.resolve(__dirname, 'src'),
-  target: 'web'
-}, CONFIG);
+  target: 'web',
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: ROOT_DIR,
+    historyApiFallback: true,
+    hot: true,
+    host: '0.0.0.0',
+    port: 8888,
+    publicPath: '/static/',
+    stats: 'normal' // customize terminal console info
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('development')
+      }
+    })
+  ],
+  performance: {
+    hints: false
+  }
+};
