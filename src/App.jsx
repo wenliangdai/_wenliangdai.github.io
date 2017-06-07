@@ -36,7 +36,7 @@ class App extends React.Component {
         {
           pl ?
             <Audio
-              width={700}
+              width={900}
               height={360}
               fullPlayer={true}
               comment={true}
@@ -46,7 +46,8 @@ class App extends React.Component {
               color="#42A5F5"
               playlist={pl}
               style={{
-                boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.28)'
+                boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.28)',
+                width: '600px'
               }}
             /> : null
         }
